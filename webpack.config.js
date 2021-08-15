@@ -22,7 +22,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.tsx'],
         alias: {
             '@': path.resolve(__dirname, 'src/'),
         }
@@ -33,7 +33,10 @@ module.exports = {
     ],
     devServer: {
         contentBase: path.join(__dirname, "public/"),
+        useLocalIp: true,
+        host: '0.0.0.0',
         port: 3000,
+        disableHostCheck: true,
         publicPath: "http://localhost:3000/dist/",
         hotOnly: true,
         historyApiFallback: true

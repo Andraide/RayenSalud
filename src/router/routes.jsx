@@ -7,17 +7,20 @@ import {
   Link
 } from "react-router-dom";
 
-import { Home, About } from "../screens";
+import  ScrollToTop from "@/statics/ScrollToTop"
+import { Home, About, Login } from "../screens";
 
 
 export default function Routes() 
 {
     return (
         <Router history={history}>
-            <Switch>
-                <Route exact path= "/" component={Home}></Route>
-                <Route path="/about" component={About}></Route>
-            </Switch>
+            <ScrollToTop>
+                <div style={{ backgroundColor : 'red', width: '100vw', height: '100vh' }}>
+                    <Route exact path= "/" component={Login}></Route>
+                    <Route path="/about" component={About}></Route>
+                </div>               
+            </ScrollToTop>
         </Router>
     )
 }

@@ -18,17 +18,21 @@
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
     "style-loader": "^0.23.0",
-    "webpack": "^4.19.1",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.8",
+    "webpack-dev-server": "^3.11.2",
     "webpack-log": "^3.0.2"
   },
   "dependencies": {
     "and": "0.0.3",
+    "formik": "^2.2.9",
+    "history": "^5.0.1",
     "html-webpack-plugin": "^5.3.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-hot-loader": "^4.3.11",
-    "react-router-dom": "^5.2.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-hot-loader": "^4.13.0",
+    "react-router-dom": "^5.2.0",
+    "style-it": "^2.1.4",
+    "yup": "^0.32.9"
   }
 }

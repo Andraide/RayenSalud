@@ -9,7 +9,7 @@ import {
 import Routes from "./router/routes";
 
 
-class App extends Component{
+class App extends React.Component{
   render(){
     
 
