@@ -1,6 +1,6 @@
-# Esqueleton - React
+# Formulario en fases - React
 
-> A React esqueleton for fast development process.
+> Un formulario en react que se desarrolla en distintas fases.
 
 ```
 
