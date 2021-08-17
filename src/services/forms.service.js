@@ -19,7 +19,9 @@ export const formService = {
     get currentUserDataValue () { return currentUserDataSubject.value },
     get currentCarDataValue () { return currentCarDataSubject.value },
     get currentCarPhotosValue () { return currentCarPhotosSubject.value },
-    get currentDateValue () { return currentDateSubject.value }
+    get currentDateValue () { return currentDateSubject.value },
+    cleanStates,
+    sendFormData
 };
 
 function setUserData(name, phone) {
@@ -74,4 +76,25 @@ function setDate(dateIn, dateOut) {
         }
     }) 
     
+}
+
+function cleanStates() {
+    currentUserDataSubject.next(null)
+    currentCarDataSubject.next(null)
+    currentCarPhotosSubject.next(null)
+    currentDateSubject.next(null)
+}
+
+function sendFormData(name, phone, year, plate, carType, dateIn, dateOut, files)
+{
+    return new Promise((resolve, reject) => {
+        try {
+            console.log("Name", name, "Phone", phone, "Year", year, "Plate", plate, "Car type", carType, "dateIn", dateIn, "dateOut", dateOut)
+            resolve();
+        }catch(error)
+        {
+            console.log("Error", error.message)
+            reject();
+        }
+    })
 }

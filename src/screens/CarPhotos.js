@@ -78,7 +78,8 @@ class CarPhotos extends React.Component {
             borderColor: "transparent",
             borderRadius: '6px',
             width: '15vw', 
-            height: '10vh'         
+            height: '10vh',
+            fontSize: '2vw'         
         }
 
 
@@ -128,16 +129,16 @@ class CarPhotos extends React.Component {
             <div style={{ backgroundColor: '#FFFFFF', width: '100vw', height: '100vh', display: 'flex', flexDirection : 'column', flex: '1 1 auto', alignItems : 'center' }} onMouseOver = {() => console.log("On mouse over")}>
                 <div style={{ backgroundColor: 'transparent', width: '100vw', minHeight: '10vh', display: 'flex', flex: 1/10, alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
                 </div>
-                <div style={{ backgroundColor: 'transparent', width: '100vw', height: '15vh', display: 'flex', flex: 1.5/10, alignSelf: 'center', justifyContent: 'center', alignItems: 'center', borderStyle: 'solid', borderWidth: '10px', borderColor: '#000000' }}>
+                <div style={{ backgroundColor: 'transparent', width: '100vw', height: '15vh', display: 'flex', flex: 1.5/10, alignSelf: 'center', justifyContent: 'center', alignItems: 'center', borderStyle: 'solid', borderTopWidth: '10px', borderBottomWidth: '10px', borderColor: '#000000' }}>
                     <h2 style={title}>Seleccione las imagenes del vehiculo</h2> 
                 </div>
                 <div style={{ backgroundColor: 'transparent', width: '100vw', minHeight: '5vh', display: 'flex', flex: 0.5/10, alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
                 </div>
-                <div style={{ backgroundColor: 'green', width: '100vw', height: '65vh', minHeight: '65vh', maxHeight: '65vh', display: 'flex', flex: 6.5/10, alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                    <div style={{ backgroundColor: 'red', display: 'flex', flex: 1/4, justifyContent: 'center', alignItems: 'center' }}>
-                        <input type='file' maxSize="15000" onChange={this.handleChange} accept="image/png, image/jpg, image/jpeg"/>
+                <div style={{ backgroundColor: 'transparent', width: '100vw', height: '65vh', minHeight: '65vh', maxHeight: '65vh', display: 'flex', flex: 6.5/10, alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={{ backgroundColor: 'transparent', display: 'flex', flex: 1/4, justifyContent: 'center', alignItems: 'center', width: '100vw' }}>
+                        <input name="files" style={{ backgroundColor: 'transparent', margin: 0, alignItems: 'center', justifyContent: 'center', textAlign: 'center' }} type='file' maxSize="15000" onChange={this.handleChange} accept="image/png, image/jpg, image/jpeg"/>
                     </div>
-                    <div style={{ backgroundColor: 'blue', display: 'flex', flex: 2/4, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
+                    <div style={{ backgroundColor: 'transparent', display: 'flex', flex: 2/4, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
                             <img 
                                 src={ this.state.file || "https://icon-library.com/images/add-image-icon-png/add-image-icon-png-14.jpg"} 
                                 style={{ maxWidth: '20vw', maxHeight: '20vh', minWidth: '20vw', minHeight: '20vh' }} 

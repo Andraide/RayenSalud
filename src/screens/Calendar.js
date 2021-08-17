@@ -86,7 +86,8 @@ class Calendar extends React.Component {
             borderColor: "transparent",
             borderRadius: '6px',
             width: '15vw', 
-            height: '10vh'         
+            height: '10vh',
+            fontSize: '2vw'         
         }
 
 
@@ -136,14 +137,14 @@ class Calendar extends React.Component {
             <div style={{ backgroundColor: '#FFFFFF', width: '100vw', height: '100vh', display: 'flex', flexDirection : 'column', flex: '1 1 auto', alignItems : 'center', justifyContent: 'center' }} onMouseOver = {() => console.log("On mouse over")}>
                 <div style={{ backgroundColor: 'transparent', width: '100vw', minHeight: '10vh', display: 'flex', flex: 1/10, alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
                 </div>
-                <div style={{ backgroundColor: 'transparent', width: '100vw', height: '15vh', display: 'flex', flex: 1.5/10, alignSelf: 'center', justifyContent: 'center', alignItems: 'center', borderStyle: 'solid', borderWidth: '10px', borderColor: '#000000' }}>
+                <div style={{ backgroundColor: 'transparent', width: '100vw', height: '15vh', display: 'flex', flex: 1.5/10, alignSelf: 'center', justifyContent: 'center', alignItems: 'center', borderStyle: 'solid', borderTopWidth: '10px', borderBottomWidth: '10px', borderColor: '#000000' }}>
                     <h2 style={title}>Agende su visita</h2> 
                 </div>
                 <div style={{ backgroundColor: 'transparent', width: '100vw', minHeight: '5vh', display: 'flex', flex: 0.5/10, alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
                 </div>
-                <div style={{ backgroundColor: 'green', width: '100vw', height: '65vh', minHeight: '65vh', maxHeight: '65vh', display: 'flex', flex: 6.5/10, alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ backgroundColor: 'transparent', width: '100vw', height: '65vh', minHeight: '65vh', maxHeight: '65vh', display: 'flex', flex: 6.5/10, alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     
-                    <div style={{ backgroundColor: 'red', display: 'flex', flex: 1/3, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={{ backgroundColor: 'transparent', display: 'flex', flex: 1/3, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <label>Elija una fecha de ingreso</label>
                         <Space direction="vertical">
                             <DatePicker 
@@ -155,7 +156,7 @@ class Calendar extends React.Component {
                             />
                         </Space>
                     </div>
-                    <div style={{ backgroundColor: 'blue', display: 'flex', flex: 1/3, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
+                    <div style={{ backgroundColor: 'transparent', display: 'flex', flex: 1/3, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
                       <label>Elija una fecha de retiro</label>
                         <Space direction="vertical">
                             <DatePicker
