@@ -1,5 +1,4 @@
 import React, { Component} from "react";
-import { history } from '@/statics';
 import {
   Router,
   Switch,
@@ -8,19 +7,19 @@ import {
 } from "react-router-dom";
 
 import  ScrollToTop from "@/statics/ScrollToTop"
-import { Home, About, Login } from "../screens";
+import { Login, UserInfo, CarInfo, CarPhotos, Calendar, Resume } from "../screens";
 
 
 export default function Routes() 
 {
     return (
-        <Router history={history}>
-            <ScrollToTop>
-                <div style={{ backgroundColor : 'red', width: '100vw', height: '100vh' }}>
-                    <Route exact path= "/" component={Login}></Route>
-                    <Route path="/about" component={About}></Route>
-                </div>               
-            </ScrollToTop>
-        </Router>
+            <Switch>                  
+                <Route exact path= "/" component={Login}></Route>
+                <Route path="/UserInformation" component={UserInfo}></Route>
+                <Route path="/CarInformation" component={CarInfo}></Route>
+                <Route path="/CarPhotos" component={CarPhotos}></Route>
+                <Route path="/Calendar" component={Calendar}></Route>
+                <Route path="/Resume" component={Resume}></Route>
+            </Switch>
     )
 }

@@ -25,13 +25,16 @@
   },
   "dependencies": {
     "and": "0.0.3",
+    "antd": "^4.16.11",
     "formik": "^2.2.9",
     "history": "^5.0.1",
     "html-webpack-plugin": "^5.3.1",
+    "moment": "^2.29.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-hot-loader": "^4.13.0",
     "react-router-dom": "^5.2.0",
+    "rxjs": "^7.3.0",
     "style-it": "^2.1.4",
     "yup": "^0.32.9"
   }
