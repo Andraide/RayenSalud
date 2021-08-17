@@ -71,9 +71,9 @@ class Login extends React.Component {
         }
 
         const title = {
-            fontSize: "5vw",
+            fontSize: "4vw",
             color: 'blue',
-            backgroundColor: 'transparent'
+            backgroundColor: 'transparent',
         }
 
         const subtitle = {

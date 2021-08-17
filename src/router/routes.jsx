@@ -8,6 +8,7 @@ import {
 
 import  ScrollToTop from "@/statics/ScrollToTop"
 import { Login, UserInfo, CarInfo, CarPhotos, Calendar, Resume } from "../screens";
+import { Timer } from '../components'
 
 
 export default function Routes() 
