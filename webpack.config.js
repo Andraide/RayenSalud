@@ -35,9 +35,9 @@ module.exports = {
         contentBase: path.join(__dirname, "public/"),
         useLocalIp: true,
         host: '0.0.0.0',
-        port: 3000,
+        port: 3002,
         disableHostCheck: true,
-        publicPath: "http://localhost:3000/dist/",
+        publicPath: "http://localhost:3002/dist/",
         hotOnly: true,
         historyApiFallback: true
     },
